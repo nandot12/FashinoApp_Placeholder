@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/product_list_rect">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/phone_image"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/iphn_7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <customfonts.MyTextView_Helvetica_Nue_Medium
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:text="Iphone 6S, 32GB (Golden and Silver)"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:progressTint="#F9A72D"
+                        android:stepSize="1.0"
+                        android:rating="3"
+                        style="?android:attr/ratingBarStyleSmall" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13.5dp"
+                        android:textColor="#95989a"/>
+
+                    <customfonts.MyTextView_Lato_Black
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/price"/>
+
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cart"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ebeced"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <customfonts.MyTextView_Helvetica_Nue_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ram:"
+                            android:textColor="#b3b3b3"/>
+
+
+                        <customfonts.MyTextView_Helvetica_Nue_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB"
+                            android:layout_marginLeft="7dp"/>
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+
+
+                        <customfonts.MyTextView_Helvetica_Nue_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Color:"
+                            android:textColor="#b3b3b3"/>
+
+
+                        <customfonts.MyTextView_Helvetica_Nue_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="Rose, Silver, Black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+
+
+                        <customfonts.MyTextView_Helvetica_Nue_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU:"
+                            android:textColor="#b3b3b3"/>
+
+
+                        <customfonts.MyTextView_Helvetica_Nue_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="Dual Core"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

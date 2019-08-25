@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_view1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+
+    <customfonts.MyTextView_Montserrat_Alternates_Bold
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="FASHINO"
+        android:textColor="#03142B"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <customfonts.MyTextView_Helvetica_Nue_Medium
+        android:id="@+id/navAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="17dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:text="Account"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+
+        <customfonts.MyTextView_Helvetica_Nue_Medium
+            android:id="@+id/myTextView_Helvetica_Nue_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="17dp"
+            android:text="Order History"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+        <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:transcriptMode="normal">
+
+    </ExpandableListView>
+
+</LinearLayout>
+</android.support.design.widget.NavigationView>

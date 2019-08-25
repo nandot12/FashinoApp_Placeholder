@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/gridimage"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangle_viewline_stroke"
+        android:padding="10dp"
+        android:src="@drawable/iphone7_1" />
+</LinearLayout>

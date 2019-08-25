@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_product_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d3d3d3"/>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="60dp"
+            android:orientation="vertical">
+
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="441dp" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="#FFFFFF"
+                    app:ci_drawable="@drawable/ic_selected_circle"
+                    app:ci_drawable_unselected="@drawable/ic_unselected_circle"
+                    app:ci_height="5dp"
+                    app:ci_width="5dp" />
+
+
+            </FrameLayout>
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="22dp"
+                    android:orientation="vertical">
+
+                <customfonts.MyTextView_Roboto_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belle Fille Women Multicoloured Printed Shorts"
+                    android:textColor="#666666"
+                    android:textSize="13.5sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs_1_2"
+                        android:textColor="#151313"
+                        android:textSize="18sp" />
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/Rs1_11_2"
+                        android:textColor="#95989A"
+                        android:background="@drawable/strikethrough"
+                        android:textSize="11sp" />
+
+
+                    <customfonts.MyTextView_Roboto_Black
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="60% off"
+                        android:textColor="#478A38" />
+
+
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f1f1f2"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="22dp">
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SELECT SIZE"
+                        android:textSize="13sp" />
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="22dp"
+                        android:text="Size Chart"
+                        android:textColor="#1774F0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/size_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:clipToPadding="false"
+                    android:paddingLeft="22dp"
+                    android:paddingTop="15dp"></android.support.v7.widget.RecyclerView>
+
+
+                <customfonts.MyTextView_Roboto_Italic
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"
+                    android:text="The model (height 5’8’’) is wearing a size 28"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#fafafa"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_rectangle_1"
+                    android:orientation="vertical">
+
+
+                <customfonts.MyTextView_Roboto_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Product Details"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <customfonts.MyTextView_Helvetica_Nue_Medium
+                    android:id="@+id/myTextView_Roboto_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/text"
+                    android:textAlignment="textStart"
+                    android:textSize="13sp" />
+
+
+                <customfonts.MyTextView_Roboto_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Material Care"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Helvetica_Nue_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crepe"
+                        android:textSize="12.5sp" />
+
+                    <customfonts.MyTextView_Helvetica_Nue_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Hand-wash"
+                        android:textSize="12.5sp" />
+
+
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_1"
+                android:orientation="vertical">
+
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Delivery"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/location" />
+
+                            <customfonts.EditText_Roboto_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/white"
+                                android:maxLines="1"
+                                android:textColorHint="#95989A"
+                                android:hint="Enter Deleveiry pincode"
+                                android:textSize="15sp" />
+
+
+                            <customfonts.MyTextView_Roboto_Medium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Check"
+                                android:textColor="@color/blue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                                </LinearLayout>
+                            <View
+                                android:layout_width="190dp"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#95989a" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="44dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/root"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <customfonts.MyTextView_Roboto_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Usually delever in 3-4 days"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+
+                        <customfonts.MyTextView_Roboto_Medium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#95989A"
+                            android:text="Enter pincode for exact delivery dates/charges"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal">
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="22dp"
+                    android:text="Similar Products"
+                    android:textColor="@color/heading_text_color"
+                    android:textSize="14sp" />
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:text="View All"
+                    android:textColor="@color/heading_text_color"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="0dp"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"
+                android:divider="#fff"
+                android:scrollbars="none" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@+id/bottombar"
+        android:background="@drawable/shadow" />
+     <LinearLayout
+         android:id="@+id/bottombar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#FFFFFF"
+         android:layout_alignParentBottom="true"
+         android:orientation="horizontal">
+
+         <customfonts.MyTextView_Roboto_Medium
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:textSize="13sp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginBottom="9dp"
+             android:layout_marginTop="9dp"
+             android:padding="15dp"
+             android:gravity="center"
+             android:background="@drawable/grey_rect"
+             android:textColor="@color/white"
+             android:text="Add To Cart"/>
+
+         <customfonts.MyTextView_Roboto_Medium
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:textSize="13sp"
+             android:gravity="center"
+             android:padding="15dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginBottom="9dp"
+             android:layout_marginTop="9dp"
+             android:layout_marginRight="8dp"
+             android:background="@drawable/blue_rect"
+             android:textColor="@color/white"
+             android:text="Buy Now"/>
+
+
+
+     </LinearLayout>
+
+
+</RelativeLayout>

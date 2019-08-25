@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="vertical" >
+
+    <customfonts.MyTextView_Helvetica_Nue_Medium
+        android:id="@+id/lblListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="hahhahahh"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#b3b3b3"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+</LinearLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <customfonts.MyTextView_Roboto_Medium
+        android:id="@+id/txtsubtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/heading_text_color"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"/>
+
+</LinearLayout>-->

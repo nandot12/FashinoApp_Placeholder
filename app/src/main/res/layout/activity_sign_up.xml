@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_signup"/>
+
+
+        <customfonts.MyTextView_Montserrat_Alternates_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FASHINO"
+            android:textColor="#666666"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+        <customfonts.EditText_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:id="@+id/registerName"
+            android:background="@drawable/signeup_ciruclarrectangle"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:hint="Name"
+            android:maxLines="1"
+            android:textColor="@color/stringcolor"
+            android:textSize="15sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp" />
+
+        <customfonts.EditText_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/signeup_ciruclarrectangle"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:id="@+id/registerhp"
+            android:hint="No HP"
+            android:maxLines="1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/stringcolor"
+            android:textSize="15sp" />
+
+        <customfonts.EditText_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/signeup_ciruclarrectangle"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:maxLines="1"
+            android:id="@+id/registerEmail"
+            android:hint="Email ID"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/stringcolor"
+            android:textSize="15sp"/>
+
+        <customfonts.EditText_Roboto_Regular
+            android:id="@+id/registerPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/signeup_ciruclarrectangle"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+
+            android:maxLines="1"
+            android:hint="Password"
+            android:textColor="@color/stringcolor"
+            android:textSize="15sp" />
+
+        <customfonts.EditText_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signeup_ciruclarrectangle"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:maxLines="1"
+            android:id="@+id/registerConfirmPass"
+            android:hint="Re-Password"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/stringcolor"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <customfonts.MyTextView_Roboto_Medium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signeup_ciruclarrectangleblue"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:id="@+id/registerBtnSignup"
+        android:text="Signup"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="15sp"
+
+        android:layout_marginBottom="35dp" />
+</RelativeLayout>

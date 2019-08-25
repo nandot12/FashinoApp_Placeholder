@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FashinoApp_Placeholder</string>
+
+    <string name="price"><b>$ 343</b></string>
+
+    <string-array name="steps">
+        <item>\u25cf \u25cb \u25cb \u25cb \u25cb \u25cb</item>
+        <item>\u25cb \u25cf \u25cb \u25cb \u25cb \u25cb</item>
+        <item>\u25cb \u25cb \u25cf \u25cb \u25cb \u25cb</item>
+        <item>\u25cb \u25cb \u25cb \u25cf \u25cb \u25cb</item>
+        <item>\u25cb \u25cb \u25cb \u25cb \u25cf \u25cb </item>
+        <item>\u25cb \u25cb \u25cb \u25cb  \u25cb \u25cf</item>
+    </string-array>
+
+    <string-array name="steps1">
+        <item>\u25cf \u25cb \u25cb \u25cb </item>
+        <item>\u25cb \u25cf \u25cb \u25cb </item>
+        <item>\u25cb \u25cb \u25cf \u25cb </item>
+        <item>\u25cb \u25cb \u25cb \u25cf </item>
+    </string-array>
+    <string name="Rs">\u20B9 60,9999</string>
+    <string name="Rs1">\u20B9 63,999</string>
+    <string name="Rs_1">\u20B9 8,999</string>
+    <string name="Rs_1_2">\u20B9 399</string>
+    <string name="Rs1_1">\u20B9 9,999</string>
+    <string name="Rs1_11_2">\u20B9 999</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="title_activity_product_detail_2_">ProductDetail_2_Activity</string>
+
+    <string name="text">A pair of multicoloured woven mid-rise printed
+shorts, has a waistband with belt loops, zip fly
+and button closure, pleat detailing below the
+waistband on the front, two slants pockets on
+the front sides</string>
+    <string name="error">something Error</string>
+    <string name="salah">Expression \'status\' must not be null</string>
+    <string name="error_load">failed load</string>
+    <string name="title_activity_keranjang">Keranjang</string>
+
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_rectangle_1"
+        android:orientation="vertical"
+        android:layout_margin="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+
+
+          <!--  <customfonts.MyTextView_Roboto_Black
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALE 10%"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="11sp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/border_rectangle"/>
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/ic_heart"/>-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="89dp"
+                android:layout_height="89dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp" />
+
+
+            <customfonts.MyTextView_Helvetica_Nue_Medium
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Febric Black Doss"
+                android:textSize="12sp"
+                android:layout_marginTop="26dp"
+                android:layout_gravity="center"/>
+
+            <customfonts.MyTextView_Helvetica_Nue_Medium
+                android:id="@+id/subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a3a3a3"
+                android:text="(neat seat)"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="center"
+                android:progressTint="#f9a72d"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <customfonts.MyTextView_Lato_Black
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:text="$"/>
+
+
+                <customfonts.MyTextView_Lato_Black
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:text="89"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

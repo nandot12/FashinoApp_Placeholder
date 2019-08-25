@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "start"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <customfonts.MyTextView_Montserrat_Alternates_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FASHINO"
+            android:layout_marginLeft="39dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="35sp"
+            android:layout_marginTop="30dp"
+            android:textColor="#1875f0"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/navigation_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical"
+            android:background="@drawable/banner_img">
+
+            <!-- <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="111dp"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="6dp"
+                 android:src="@drawable/jbl2"/>-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:background="#FFFFFF"></LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.design.widget.NavigationView>
